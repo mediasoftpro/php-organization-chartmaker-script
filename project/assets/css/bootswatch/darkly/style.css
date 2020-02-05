@@ -1,0 +1,37 @@
+﻿@import url('http://fonts.googleapis.com/css?family=Lato:300');
+@import url('http://weloveiconfonts.com/api/?family=entypo');
+
+.leftlinks{
+     font-family: Entypo;
+     line-height: 45px;
+     font-weight:bold;
+     font-size:14px;
+}
+.social {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  margin: 0 5px;
+  line-height: 45px;
+  font-family: Entypo;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #314b66;
+  overflow: hidden;
+  transition: color .3s;
+}
+
+.social:hover {
+  color: #fff;
+  background: #24374b;
+  cursor: pointer;
+}
+
+.social a {
+    text-decoration:none;
+}
+.social {
+
+}

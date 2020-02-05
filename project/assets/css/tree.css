@@ -1,0 +1,191 @@
+
+/***************************************************
+// Tree Css
+/***************************************************
+
+/** DISABLE TEXT SELECTION (SET ON BODY WHEN DRAGGING IS OCCURRING) **/
+.vd {position:relative;}
+.dur { position:absolute; display:inline-block; padding:1px 2px; background:#000; color:#fff; font-size:bold 93%; opacity: .70;filter:Alpha(Opacity=60);}
+
+._jsPlumb_drag_select * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none
+}
+#vcart {  
+  margin-top:10px;  
+  font-size: 12px;    
+  width:100%;
+  margin-left:auto;
+  margin-right: auto;  
+  height:700px;
+  text-align: center;
+  position: relative;
+  max-width:1100px;
+  border: solid 1px #000;
+  overflow:auto;  
+}
+.print #vcart {
+	border: none;
+}
+.vcart-inner {
+  position: relative;
+  width:5000px;
+  background-color:white;    
+  height:5000px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.component { 
+  border:1px solid #346789; 
+  border-radius:0.5em;        
+  opacity:0.8; 
+  filter:alpha(opacity=80);
+  background-color:white;
+  color:black;
+  padding:0.5em;   
+  font-size:0.8em;
+}
+.component:hover {
+    border:1px solid #123456;
+    box-shadow: 2px 2px 19px #444;
+   -o-box-shadow: 2px 2px 19px #444;
+   -webkit-box-shadow: 2px 2px 19px #444;
+   -moz-box-shadow: 2px 2px 19px #fff;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+}
+.window {
+    background-color:white;
+    border:1px solid #346789;
+    box-shadow: 2px 2px 19px #e0e0e0;
+    -o-box-shadow: 2px 2px 19px #e0e0e0;
+    -webkit-box-shadow: 2px 2px 19px #e0e0e0;
+    -moz-box-shadow: 2px 2px 19px #e0e0e0;
+    -moz-border-radius:0.5em;
+    border-radius:0.5em;        
+    position:absolute;    
+    color:black;
+    padding:5px;
+    width:132px;
+	height:auto;
+    line-height: 14px;     
+    -webkit-transition: -webkit-box-shadow 0.15s ease-in;
+    -moz-transition: -moz-box-shadow 0.15s ease-in;
+    -o-transition: -o-box-shadow 0.15s ease-in;
+    transition: box-shadow 0.15s ease-in;
+    z-index:50;
+}
+.window:hover {
+    border:1px solid #123456;
+    box-shadow: 2px 2px 19px #444;
+   -o-box-shadow: 2px 2px 19px #444;
+   -webkit-box-shadow: 2px 2px 19px #444;
+   -moz-box-shadow: 2px 2px 19px #fff;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+}
+.window a {
+    font-family:helvetica;
+}
+
+._jsPlumb_connector { z-index:18; }
+._jsPlumb_endpoint { z-index:19; }
+._jsPlumb_overlay { z-index:20; }
+
+.aLabel {
+  background-color:white; 
+  padding:0.4em; 
+  font:12px sans-serif; 
+  color:#444;
+  z-index:21;
+  border:1px dotted gray;
+  opacity:0.8;
+  filter:alpha(opacity=80);
+  cursor: pointer;
+}
+.aLabel._jsPlumb_hover {
+  background-color:#5C96BC;
+  color:white;  
+  border:1px solid white;
+}
+
+._jsPlumb_connector { z-index:18; }
+._jsPlumb_endpoint { z-index:19; }
+._jsPlumb_overlay { z-index:20; }
+
+/** ELEMENTS **/
+.chart-demo.window { 
+	border:0.1em dotted #d4e06b; 	
+	width:136px; height: auto; 	
+	line-height:20px;	
+}
+
+/** HOVER EFFECTS **/
+.chart-demo.window:hover, .chart-demo.window._jsPlumb_source_hover, .chart-demo.window._jsPlumb_target_hover {
+	font-weight:bold;
+}
+
+.chart-demo .window.female { 
+	border:0.1em dotted #c41b8e; 	
+	background-color:#fac9ea;
+	font-size:93%;
+}
+.chart-demo .window.female:hover { 
+	border:0.1em dotted #861060; 
+	background-color:#861060;	
+	color:#fff;
+}
+.chart-demo .window.female.active { 
+	border:0.1em dotted #861060; 
+	background-color:#861060;	
+	color:#fff;
+}
+.chart-demo .window.male { 
+	border:0.1em dotted #284db9; 	
+	background-color:#a8bcf7;
+	font-size:93%;
+}
+.chart-demo .window.male:hover { 
+	border:0.1em dotted #16348d; 	
+	background-color:#16348d;
+	color:#fff; 
+}
+.chart-demo .window.male.active { 
+	border:0.1em dotted #16348d; 	
+	background-color:#16348d;
+	color:#fff;
+}
+
+.chart-demo .window.author { 
+	border:0.1em dotted #000; 	
+	background-color:#5a5358;
+	color:#fff;
+	font-size:93%;
+}
+.chart-demo .window.author:hover { 
+	border:0.1em dotted #000; 
+	background-color:#41393e;	
+	color:#fff;
+}
+.chart-demo .window.author.active { 
+	border:0.1em dotted #000; 
+	background-color:#41393e;	
+	color:#fff;
+}
+
+
+.color-box {
+	float:left;
+	width:16px;
+	height:16px;
+	margin:5px;
+	border: 1px solid #000;
+	background:#ff8800;
+}
+.colpick {
+  z-index: 9999;
+}

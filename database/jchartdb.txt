@@ -1,0 +1,65 @@
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for chartconnects
+-- ----------------------------
+DROP TABLE IF EXISTS `chartconnects`;
+CREATE TABLE `chartconnects` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `chartid` bigint(20) NOT NULL,
+  `selementid` varchar(100) DEFAULT NULL,
+  `delementid` varchar(100) DEFAULT NULL,
+  `sconnectpos` varchar(20) DEFAULT NULL,
+  `dconnectpos` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=575 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for chartnodes
+-- ----------------------------
+DROP TABLE IF EXISTS `chartnodes`;
+CREATE TABLE `chartnodes` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `chartid` bigint(20) NOT NULL,
+  `firstname` varchar(50) DEFAULT NULL,
+  `surname` varchar(50) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `title` varchar(150) DEFAULT NULL,
+  `description` text,
+  `email` varchar(100) DEFAULT NULL,
+  `website` varchar(150) DEFAULT NULL,
+  `hometel` varchar(20) DEFAULT NULL,
+  `mobile` varchar(20) DEFAULT NULL,
+  `profession` varchar(150) DEFAULT NULL,
+  `company` varchar(150) DEFAULT NULL,
+  `interests` varchar(150) DEFAULT NULL,
+  `bionotes` varchar(300) DEFAULT NULL,
+  `photo` varchar(200) DEFAULT NULL,
+  `leftpos` int(11) DEFAULT NULL,
+  `toppos` int(11) DEFAULT NULL,
+  `elementid` varchar(100) DEFAULT NULL,
+  `nodecaption` varchar(255) DEFAULT NULL,
+  `bkcolor` varchar(10) DEFAULT NULL,
+  `ftcolor` varchar(10) DEFAULT NULL,
+  `brcolor` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=697 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for charts
+-- ----------------------------
+DROP TABLE IF EXISTS `charts`;
+CREATE TABLE `charts` (
+  `chartid` bigint(20) NOT NULL AUTO_INCREMENT,
+  `title` varchar(200) NOT NULL,
+  `userid` bigint(20) NOT NULL DEFAULT '0',
+  `username` varchar(20) NOT NULL,
+  `privacy` tinyint(4) NOT NULL DEFAULT '0',
+  `dateadded` datetime DEFAULT NULL,
+  `connectstyle` varchar(20) DEFAULT NULL,
+  `linewidth` int(11) DEFAULT NULL,
+  `linecolor` varchar(10) DEFAULT NULL,
+  `linehovercolor` varchar(255) DEFAULT NULL,
+  `cornerradius` int(11) DEFAULT NULL,
+  PRIMARY KEY (`chartid`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
